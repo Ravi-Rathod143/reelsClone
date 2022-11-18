@@ -1,0 +1,30 @@
+.login-container{
+
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    /* instagram image ko or konsa bhi images ko center me lane ke kiye text-align:center krte he */
+    text-align: center;
+    flex-direction: column;
+}
+
+.login-card{
+
+    width: 21rem;
+    height: 18.5rem;
+    padding: 1rem;
+
+
+
+
+}
+.bottom1-card{
+    width: 19rem;
+    border: 1px solid #ccc;
+    padding: 0.2rem;
+    text-align: center;
+    justify-content: center;
+    /* margin-top: ; */
+}
