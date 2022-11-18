@@ -15,14 +15,13 @@
     width: 21rem;
     height: 18.5rem;
     padding: 1rem;
-
-
+    border: 1px solid rgb(238, 234, 234);
 
 
 }
 .bottom1-card{
     width: 19rem;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(228, 228, 228);
     padding: 0.2rem;
     text-align: center;
     justify-content: center;

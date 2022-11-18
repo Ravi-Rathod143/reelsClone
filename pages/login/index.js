@@ -17,7 +17,7 @@ function index() {
                 <TextField id="outlined-basic" size="small" label="Email" variant="outlined" fullWidth margin='dense' />
                 <TextField id="outlined-basic" size="small" label="Password" variant="outlined" fullWidth margin='dense' type='password' />
 
-                <span style={{color:"blue"}}>forgot password ?</span>
+                <span style={{color:"blue" ,marginTop:"0.5rem"}}>forget password ?</span>
 
                 {/* login button */}
 
