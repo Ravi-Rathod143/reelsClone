@@ -3,33 +3,59 @@ import Image from 'next/image'
 import logo from '../../assets/Instagram.jpeg'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import CloudUploadIcon from '@mui/icons-material/CloudUpload'
-import IconButton from '@mui/material/IconButton';
-
+import { Carousel } from 'react-responsive-carousel'
+import bg1 from '../../assets/bg1.jpg';
+import bg2 from '../../assets/bg2.jpg';
+import bg3 from '../../assets/bg3.jpg';
+import bg4 from '../../assets/bg4.jpg';
+import bg5 from '../../assets/bg5.jpg';
 
 function index() {
     return (
         <div className='login-container'>
-            <div className='login-card'>
-                {/* email,password, forgot password */}
+            <div className='insta-mob-bg'>
+                <div className="carousel">
+                    {/* autoplay hoto mobile vr ch img */}
+                    <Carousel
+                        autoPlay interval={2000}
+                        infiniteLoop
 
-                <Image src={logo} />
-                <TextField id="outlined-basic" size="small" label="Email" variant="outlined" fullWidth margin='dense' />
-                <TextField id="outlined-basic" size="small" label="Password" variant="outlined" fullWidth margin='dense' type='password' />
-
-                <span style={{color:"blue" ,marginTop:"0.5rem"}}>forget password ?</span>
-
-                {/* login button */}
-
-                <Button size="small" variant="contained" component="label" style={{ marginTop: "1rem", width: "19rem" }}>
-                    Login
-                    <input hidden accept="image/*" multiple type="file" />
-                </Button>
-
-
+                        showArrows={false}
+                        showThumbs={false}
+                        showIndicators={false}
+                        stopOnHover
+                        showStatus={false}
+                    >
+                        <Image src={bg1} />
+                        <Image src={bg2} />
+                        <Image src={bg3} />
+                        <Image src={bg4} />
+                        <Image src={bg5} />
+                    </Carousel>
+                </div>
             </div>
-            <div className='bottom1-card'>
-                don't have an account ? {" "}<span style={{ color: "blue" }}>SignUp</span>
+            <div>
+                <div className='login-card'>
+                    {/* email,password, forgot password */}
+
+                    <Image src={logo} />
+                    <TextField id="outlined-basic" size="small" label="Email" variant="outlined" fullWidth margin='dense' />
+                    <TextField id="outlined-basic" size="small" label="Password" variant="outlined" fullWidth margin='dense' type='password' />
+
+                    <span style={{ color: "blue", marginTop: "0.5rem" }}>forget password ?</span>
+
+                    {/* login button */}
+
+                    <Button size="small" variant="contained" component="label" style={{ marginTop: "1rem", width: "19rem" }}>
+                        Login
+                        <input hidden accept="image/*" multiple type="file" />
+                    </Button>
+
+
+                </div>
+                <div className='bottom1-card'>
+                    don't have an account ? {" "}<span style={{ color: "blue" }}>SignUp</span>
+                </div>
             </div>
 
         </div>
