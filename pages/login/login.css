@@ -6,23 +6,23 @@
     align-items: center;
     margin-top: 0.1rem;
     /* width: 990px; */
-    height:600px;
+    height:700px;
     text-align: center;
     flex-direction: row;
 }
 
 .login-card{
 
-    width:25rem;
-    height:18rem;
+    width:28rem;
+    height:22rem;
     border: 1px solid #ccc;
-    padding: 1rem;
+    padding: 2.6rem;
     margin-left: 100px;
 
 
 }
 .bottom1-card{
-    width:25rem;
+    width:28rem;
     border: 1px solid #ccc;
  padding: 1rem;
  margin-top: 1rem;
